@@ -21,13 +21,11 @@
                 <asp:ListItem Text="Saturday" Value="5"></asp:ListItem>
                 <asp:ListItem Text="Sunday" Value="6"></asp:ListItem>
             </asp:CheckBoxList>
-            
         </div>
         <div>
             <asp:Button runat="server" Text="Submit" />
         </div>
         <div runat="server" id="monthly_summary">
-
         </div>
     </form>
 </body>

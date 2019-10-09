@@ -16,11 +16,17 @@ namespace n01338717_bonus_assignment
                 Page.Validate();
                 if(Page.IsValid)
                 {
+                    //declare some required variables
+                    //for number of tickets purchased
                     int number_of_tickets = Convert.ToInt32(tickets_quantity.Text.ToString());
+                    //To calculate total amount of purchased tickets
                     double total_price = 0;
+                    //Cost of 1 ticket
                     double individual_ticket_price = 0.25;
+                    //This variable is for left over tickets
                     int left_over_tickets = 0;
                     summary.InnerHtml = "";
+                    //Check how many purchased tickets
                     if(number_of_tickets > 0 && number_of_tickets <= 50)
                     {
                         for(int i=1;i<=number_of_tickets;i++)
@@ -80,6 +86,7 @@ namespace n01338717_bonus_assignment
                     }
                     else
                     {
+                        //If user enter in negative value or 0
                         summary.InnerHtml += "Entered number of tickets is not valid";
                     }
                 }

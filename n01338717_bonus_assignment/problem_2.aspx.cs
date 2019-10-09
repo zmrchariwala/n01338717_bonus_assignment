@@ -17,6 +17,7 @@ namespace n01338717_bonus_assignment
                 if(Page.IsValid)
                 {
                     List<int> working_days = new List<int>();
+                    //counter variable with decide day is working day or holiday By default its holiday
                     int counter = 0;
                     //Collect the days off from the user and store the in list
                     foreach (ListItem day in week_days.Items)
@@ -29,7 +30,6 @@ namespace n01338717_bonus_assignment
                    
                        
                     }
-                    
                     //This make easy to work with loop
                     working_days.ToArray();
                     //Now we will change holidays to working days according to user input
